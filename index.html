@@ -1,41 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicole's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nicole Malku</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 </head>
+
 <body>
-    <header>
-        <h1>Nicole's Portfolio</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+  <div class="window-controls">
+    <span class="window-btn close"></span>
+    <span class="window-btn minimize"></span>
+    <span class="window-btn maximize"></span>
+  </div>
+
+  <div class="page-container">
+    <header class="side-nav" id="sidebar">
+      <div class="logo">/NicoleMalku</div>
+      <nav class="navbar">
+        <a href="#home"><i class="fa-solid fa-house"></i> home.py</a>
+        <a href="#about"><i class="fa-solid fa-user"></i> about.c</a>
+        <a href="#projects"><i class="fa-solid fa-folder-open"></i> projects.js</a>
+        <a href="#resume"><i class="fa-solid fa-file-lines"></i> resume.pdf</a>
+        <a href="#contact"><i class="fa-solid fa-envelope"></i> contact.html</a>
+      </nav>
+      
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I’m Nicole! I’m a computer science student passionate about software development and building meaningful technology.</p>
-    </section>
+    <!-- Main Content -->
+    <main class="main-content">
+      <section id="home" class="full-screen">
+        <div class="home-content">
+          <h1 class="typing">
+            >> <span class="keyword">print</span><span class="parenthesis">(</span><span class="string">"Hi! I'm Nicole Malku"</span><span class="parenthesis">)</span>
+          </h1>           
+          <h2>Student at SFU, Software Developer</h2>     
+          <div class="contact-icons">
+            <a
+              href="https://github.com/00nicole"
+              target="_blank"
+              class="contact-icon"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/nicolemalku"
+              target="_blank"
+              class="contact-icon"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="mailto:nma76@sfu.ca" target="_blank" class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Project 1:</strong> temp description</li>
-            <!-- Add more projects as needed -->
-        </ul>
-    </section>
+      <section id="about" class="full-screen">
+        <h2 class="string">>> About Me</h2>
+        <p>Hi, I’m Nicole! I’m a 4th year computer science student at SFU. </p>
+      </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at: <a href="mailto:nma76@sfu.ca">nma76@sfu.ca</a></p>
-    </section>
+      <section id="projects" class="full-screen">
+        <h2 class="string">>> Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <a href="https://github.com/00nicole/currency-converter" target="_blank"
+              ><h3>Convertly</h3></a
+            >
+          </div>
+          <div class="project-card">
+            <a href="https://github.com/00nicole/Lets-Talk" target="_blank"
+              ><h3>Let's Talk!</h3></a
+            >
+          </div>
+          <div class="project-card">
+            <a href="https://github.com/00nicole/Alien-Escape" target="_blank"
+              ><h3>Alien Escape</h3></a
+            >
+          </div>
+        </div>
+      </section>
 
-    <footer>
-        <p>&copy; 2025 Nicole Malku</p>
-    </footer>
+      <section id="resume" class="full-screen">
+        <h2 class="string">>> Resume</h2>
+        <div class="resume-container">
+          <iframe
+            src="/assets/nicoleres.pdf"
+            class="resume-frame"
+            title="Resume"
+          ></iframe>
+          <br /><br />
+        </div>
+      </section>
+
+      <section id="contact" class="full-screen">
+        <h2 class="string">>> Contact</h2>
+        <p>
+          Feel free to reach out at any time! You can reach me by email, or connect with me on Linkedin.
+        </p>
+        <div class="contact-icons">
+          <a
+            href="https://github.com/00nicole"
+            target="_blank"
+            class="contact-icon"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/nicolemalku"
+            target="_blank"
+            class="contact-icon"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="mailto:nma76@sfu.ca" target="_blank" class="contact-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Nicole Malku</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
