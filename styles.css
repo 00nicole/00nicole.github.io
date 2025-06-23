@@ -300,11 +300,12 @@ a {
   }
 
 
-footer {
+  footer {
     background-color: var(--sidebar);
     color: var(--text);
-    text-align: center;
+    text-align: center;       
     padding: 1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;        
+    font-family: 'Consolas', 'Courier New', monospace; 
     margin-top: 2rem;
 }
