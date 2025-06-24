@@ -305,23 +305,13 @@ body.sidebar-collapsed .page-container {
     gap: 2rem;
     margin-top: 2rem;
     border-left: 3px solid #aeedfb;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
 }
 
 .timeline-item {
     position: relative;
 }
 
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -1.2rem;
-    top: 0.2rem;
-    width: 0.8rem;
-    height: 0.8rem;
-    background-color: #a0dff7;
-    border-radius: 50%;
-}
 
 .timeline-date {
     font-weight: bold;
@@ -329,6 +319,7 @@ body.sidebar-collapsed .page-container {
     margin-bottom: 0.5rem;
     font-family: 'Consolas', 'Courier New', monospace;
     font-size: 1.2rem;
+    margin-left: 0px;
 }
 
 .timeline-content h3 {
@@ -340,6 +331,17 @@ body.sidebar-collapsed .page-container {
     margin: 0.5rem 0 0 0;
     font-size: 1.1rem;
     line-height: 1.5;
+}
+
+.resume-bullets {
+    padding-left: 1.5rem; /* Indent the bullets nicely */
+    margin-top: 0.5rem;    /* Spacing from the title */
+    font-size: 1.2rem;  
+}
+
+.resume-bullets li {
+    margin-bottom: 0.5rem; 
+    line-height: 1.5;     
 }
 
 .button-wrapper {
