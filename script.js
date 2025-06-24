@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    window.scrollTo(0, 0);
     const toggleButton = document.getElementById('sidebar-toggle');
     const sidebar = document.getElementById('sidebar');
     const body = document.body;

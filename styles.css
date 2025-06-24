@@ -227,6 +227,7 @@ body.sidebar-collapsed .page-container {
     transform: scale(1.2);
 }
 
+
 /* typing animation */
 .typing {
     font-family: 'Consolas', 'Courier New', monospace;
@@ -247,6 +248,24 @@ body.sidebar-collapsed .page-container {
     from, to { border-color: transparent; }
     50% { border-color: var(--text); }
 }
+
+
+/* about section*/
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-circle {
+    width: 250px;      
+    height: 250px;     
+    border-radius: 50%;
+    object-fit: cover; 
+    border: 3px solid #fbaeda;; 
+}
+
 
 /* projects section */
 .project-grid {
@@ -278,13 +297,14 @@ body.sidebar-collapsed .page-container {
     font-weight: bold;
 }
 
+
 /* resume section */
 .timeline {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin-top: 2rem;
-    border-left: 3px solid var(--highlight);
+    border-left: 3px solid #aeedfb;
     padding-left: 2rem;
 }
 
@@ -297,17 +317,18 @@ body.sidebar-collapsed .page-container {
     position: absolute;
     left: -1.2rem;
     top: 0.2rem;
-    width: 1rem;
-    height: 1rem;
-    background-color: var(--highlight);
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #a0dff7;
     border-radius: 50%;
 }
 
 .timeline-date {
     font-weight: bold;
-    color: var(--highlight);
+    color: #a0dff7;
     margin-bottom: 0.5rem;
     font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 1.2rem;
 }
 
 .timeline-content h3 {
